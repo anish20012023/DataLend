@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { useStyles } from "./AppDrawer.styles";
 import { Box, Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText, SvgIcon } from "@mui/material";
-import logo from "../../../assets/drawer/logo.svg";
-import logotxt from "../../../assets/drawer/logotxt.svg";
+
 
 const linkList = [
   { id: 0, txt: "dashbaord", img: "dashboard.svg", activeImg: "e.svg" },
@@ -18,8 +17,8 @@ function AppDrawer() {
     <Drawer variant="permanent" className={classes.mainDrawer}>
       <Box className="headLogo">
         <Box>
-          <img src={logo} />
-          <img src={logotxt} />
+          <img src="images/drawer/logo.svg" />
+          <img src="images/drawer/logotxt.svg" />
         </Box>
       </Box>
       <List className={classes.list}>
